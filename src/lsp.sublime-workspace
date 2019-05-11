@@ -1,0 +1,1323 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"len",
+				"length"
+			],
+			[
+				"Ls",
+				"Lstring"
+			],
+			[
+				"fi",
+				"fill"
+			],
+			[
+				"p",
+				"pks"
+			],
+			[
+				"le",
+				"lettre"
+			],
+			[
+				"de",
+				"debut"
+			],
+			[
+				"co",
+				"cordonnees"
+			],
+			[
+				"l",
+				"liste"
+			],
+			[
+				"sm",
+				"somme"
+			],
+			[
+				"pro",
+				"produit"
+			],
+			[
+				"s",
+				"stdio.h\tstandard header"
+			],
+			[
+				"ca",
+				"char"
+			],
+			[
+				"op",
+				"op"
+			],
+			[
+				"e",
+				"expr"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"c",
+				"char"
+			],
+			[
+				"n",
+				"next"
+			],
+			[
+				"m",
+				"mly"
+			],
+			[
+				"pa",
+				"plateau"
+			],
+			[
+				"joueu",
+				"joueur0"
+			],
+			[
+				"joue",
+				"joueur0"
+			],
+			[
+				"en",
+				"ennemis"
+			],
+			[
+				"jou",
+				"joueur0"
+			],
+			[
+				"pi",
+				"pions"
+			],
+			[
+				"end",
+				"endline"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"prin",
+				"Printf"
+			],
+			[
+				"max",
+				"maxlen"
+			],
+			[
+				"mut",
+				"multiple"
+			],
+			[
+				"expr",
+				"expression"
+			],
+			[
+				"exp",
+				"expression"
+			],
+			[
+				"tk",
+				"token"
+			],
+			[
+				"expre",
+				"expressions"
+			],
+			[
+				"mu",
+				"multiple"
+			],
+			[
+				"ex",
+				"exps"
+			],
+			[
+				"sr",
+				"str"
+			],
+			[
+				"a",
+				"abs"
+			],
+			[
+				"pio",
+				"pion"
+			],
+			[
+				"con",
+				"condition2"
+			],
+			[
+				"cibl",
+				"cible1"
+			],
+			[
+				"depl",
+				"deplacement"
+			],
+			[
+				"at",
+				"action"
+			],
+			[
+				"ana",
+				"analyser"
+			],
+			[
+				"cib",
+				"cible2"
+			],
+			[
+				"t",
+				"to"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"chec",
+				"checkLogin"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"poi",
+				"position"
+			],
+			[
+				"po",
+				"posistion"
+			],
+			[
+				"posi",
+				"posistion"
+			],
+			[
+				"ci",
+				"cible1"
+			],
+			[
+				"pos",
+				"position2"
+			],
+			[
+				"colo",
+				"Colonne"
+			],
+			[
+				"aff",
+				"afficher"
+			],
+			[
+				"use",
+				"users"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"is",
+				"isNuc"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"upda",
+				"updateJson"
+			],
+			[
+				"cea",
+				"createElement"
+			],
+			[
+				"bac",
+				"background-image\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"get",
+				"getName"
+			],
+			[
+				"backgro",
+				"background\tproperty"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"ali",
+				"align-content\tproperty"
+			],
+			[
+				"bore",
+				"border\tproperty"
+			],
+			[
+				"fnt",
+				"font-family\tproperty"
+			],
+			[
+				"marin",
+				"margin\tproperty"
+			],
+			[
+				"num",
+				"Num"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"ep",
+				"expression"
+			],
+			[
+				"oper",
+				"operator"
+			],
+			[
+				"R",
+				"regexp"
+			],
+			[
+				"li",
+				"list"
+			],
+			[
+				"key",
+				"key\tkeyPressed"
+			],
+			[
+				"cn",
+				"container"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"cmd",
+				"cmd2"
+			],
+			[
+				"exe",
+				"exec"
+			],
+			[
+				"f",
+				"filename"
+			],
+			[
+				"in",
+				"integral"
+			],
+			[
+				"lm",
+				"limit"
+			],
+			[
+				"inc",
+				"inc\t#include \"…\""
+			],
+			[
+				"S",
+				"StyleSheet"
+			],
+			[
+				"for",
+				"from"
+			],
+			[
+				"conta",
+				"Contacts"
+			],
+			[
+				"nav",
+				"navigationOptions"
+			],
+			[
+				"Te",
+				"Test"
+			],
+			[
+				"Rea",
+				"React"
+			],
+			[
+				"create",
+				"createAppContainer"
+			],
+			[
+				"styl",
+				"styles"
+			],
+			[
+				"icon",
+				"iconName"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"com",
+				"Component"
+			],
+			[
+				"App",
+				"AppNavigator"
+			],
+			[
+				"Sele",
+				"select"
+			],
+			[
+				"set",
+				"setState"
+			],
+			[
+				"na",
+				"NavItem"
+			],
+			[
+				"Na",
+				"NavBar"
+			],
+			[
+				"Nav",
+				"NavItem"
+			],
+			[
+				"ba",
+				"Banana"
+			],
+			[
+				"red",
+				"render"
+			],
+			[
+				"Ta",
+				"TabBarIOS"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"Pres",
+				"Pressed"
+			],
+			[
+				"Pre",
+				"Press"
+			],
+			[
+				"pre",
+				"Pressed"
+			],
+			[
+				"Pro",
+				"ProfileScreen"
+			],
+			[
+				"Ho",
+				"HomeScreen"
+			],
+			[
+				"sub",
+				"subst"
+			],
+			[
+				"del",
+				"delet"
+			],
+			[
+				"ins",
+				"inser"
+			],
+			[
+				"seq",
+				"seqA"
+			],
+			[
+				"Rule",
+				"Rules"
+			],
+			[
+				"comm",
+				"commitList"
+			],
+			[
+				"ht",
+				"htmlForCommits"
+			],
+			[
+				"tabl",
+				"tableContent"
+			],
+			[
+				"sta",
+				"getState"
+			],
+			[
+				"commit",
+				"commitList"
+			],
+			[
+				"y",
+				"ytest"
+			],
+			[
+				"as",
+				"astype"
+			],
+			[
+				"im",
+				"img"
+			],
+			[
+				"lab",
+				"labels"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				],
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pdflatex.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/pdflatex.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					""
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Re-run sketch"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch (Processing 3 only)"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch fullscreen"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Export sketch as application"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Kill running sketches"
+				],
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Processing/Build Systems/Processing.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					""
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Re-run sketch"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch (Processing 3 only)"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch fullscreen"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Export sketch as application"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Kill running sketches"
+				],
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pdflatex.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Processing/Build Systems/Processing.sublime-build",
+				"Re-run sketch"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pdflatex.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/ShellScript/ShellScript.sublime-build",
+					""
+				],
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/ShellScript/ShellScript.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				],
+				[
+					"Packages/User/pdflatex.sublime-build",
+					""
+				],
+				[
+					"Packages/User/untitled.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/ocaml.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/ocaml.sublime-build",
+					""
+				],
+				[
+					"Packages/User/untitled.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/ocaml.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"DoxyD",
+				"Preferences: DoxyDoxygen Settings"
+			],
+			[
+				"cam",
+				"Set Syntax: OCaml"
+			],
+			[
+				"Wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"Set syntax P",
+				"Set Syntax: Python"
+			],
+			[
+				"ce",
+				"Set Syntax: Cell"
+			],
+			[
+				"ya",
+				"Set Syntax: YAML"
+			],
+			[
+				"Cel",
+				"Set Syntax: Cell"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"Set St ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"set h",
+				"Set Syntax: HTML"
+			],
+			[
+				"Buil",
+				"Build With: pdflatex"
+			],
+			[
+				"run s",
+				"Build With: Processing - Run sketch (Processing 3 only)"
+			],
+			[
+				"run",
+				"Build With: Processing - Kill running sketches"
+			],
+			[
+				"snippet : com",
+				"Snippet: doc - comment"
+			],
+			[
+				"proces",
+				"Project: Refresh Folders"
+			],
+			[
+				"rrun",
+				"Build With: Processing - Re-run sketch"
+			],
+			[
+				"set syn",
+				"Set Syntax: Processing"
+			],
+			[
+				"Set Syntax jaa",
+				"Set Syntax: Java"
+			],
+			[
+				"set",
+				"Set Syntax: Processing"
+			],
+			[
+				"run sk",
+				"Build With: Processing - Re-run sketch"
+			],
+			[
+				"Snip",
+				"Snippet: Chapter"
+			],
+			[
+				"Sni",
+				"Snippet: Insert a LaTeX environment"
+			],
+			[
+				"Snippet",
+				"Snippet: Chapter"
+			],
+			[
+				"Color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"buil",
+				"Build: New Build System"
+			],
+			[
+				"The",
+				"UI: Select Theme"
+			],
+			[
+				"color",
+				"Color Picker: Insert Color"
+			],
+			[
+				"colorshe",
+				"Preferences: Terminal View: Color Scheme"
+			],
+			[
+				"terminalvi",
+				"Preferences: Terminal View: Color Scheme"
+			],
+			[
+				"terminal vie",
+				"Preferences: Terminal View: Color Scheme"
+			],
+			[
+				"Terminal vie",
+				"Preferences: Terminal View: Keybindings"
+			],
+			[
+				"terminalV",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"terminal",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"ter",
+				"Preferences: Terminality Key Bindings – Default"
+			],
+			[
+				"terminality",
+				"Preferences: Terminality Settings – User"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"re-r",
+				"Build With: Processing - Re-run sketch"
+			],
+			[
+				"pro",
+				"Build With: Processing - Kill running sketches"
+			],
+			[
+				"proce",
+				"Build With: Processing - Run sketch (Processing 3 only)"
+			],
+			[
+				"Set syntax bas",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"set n",
+				"Set Syntax: NPM JSON"
+			],
+			[
+				"Mard",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mardow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"commen",
+				"Toggle Block Comment"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"Setting",
+				"Preferences: Settings"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"La",
+				"LaTeXTools: Check system"
+			],
+			[
+				"lat",
+				"LaTeXTools: Check system"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"Key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"pre",
+				"Preferences: Settings"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"mater",
+				"Activate Materialize Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/arthur/Documents/github/lisp_interpreter/src/test.lisp",
+		"/Users/arthur/Documents/github/lisp_interpreter/src/lexer.ml",
+		"/Users/arthur/Documents/github/superChip8-compiler/src/lexer.ml",
+		"/Users/arthur/Documents/github/clou_game/main.py",
+		"/Users/arthur/Documents/github/clou_game/ateliers/atelier2.py",
+		"/Users/arthur/Documents/code/ocaml/tree.ml",
+		"/Users/arthur/Documents/code/archi1.py",
+		"/Users/arthur/Documents/code/TP3.py",
+		"/Users/arthur/Documents/github/Logik/parser.py",
+		"/Users/arthur/Documents/github/Logik/lexer.py",
+		"/Users/arthur/Documents/boulot/TPS/algebre/TP_1/main.py",
+		"/Users/arthur/test.c",
+		"/Users/arthur/Documents/hello.py",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/miniPars.py",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/lexer.py",
+		"/Users/arthur/Documents/github/clou_game/Test.py",
+		"/Users/arthur/Documents/github/cell/README.md",
+		"/Users/arthur/Documents/github/cell/syntax.md",
+		"/Users/arthur/Documents/github/cell/tests/lexer_tests.py",
+		"/Users/arthur/Documents/github/clou_game/partie.txt",
+		"/Users/arthur/Documents/code/CamLex/test.txt",
+		"/Users/arthur/Documents/code/CamLex/jj.mll",
+		"/Users/arthur/Documents/github/cell/LICENSE",
+		"/Users/arthur/Documents/github/cell/Makefile",
+		"/Users/arthur/Downloads/Bowling/ws_bowling/TestBowling.py",
+		"/Users/arthur/Documents/github/jdrprod.github.io/index.html",
+		"/Users/arthur/Documents/github/jdrprod.github.io/css/index.css",
+		"/Users/arthur/Documents/github/cell/incell/cell.cell",
+		"/Users/arthur/Documents/github/cell/pycell/lexer.py",
+		"/Users/arthur/Documents/github/cell/cell",
+		"/Users/arthur/Documents/github/cell/Cell.sublime-syntax",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/src.cell",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/test.py",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/User/Cell.sublime-syntax",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/parser.py",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/cell.yml",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/sequence.py",
+		"/Users/arthur/Documents/code/MyProgramingLanguage/lexer.ml",
+		"/Users/arthur/Documents/code/python/interpreter.py",
+		"/Users/arthur/Documents/github/ca-website/users.json",
+		"/Users/arthur/Downloads/main.py",
+		"/Users/arthur/Documents/code/python/tree.py",
+		"/Users/arthur/Documents/github/ca-website/index.js",
+		"/Users/arthur/Documents/github/ca-website/README.md",
+		"/Users/arthur/Documents/github/ca-website/.gitignore",
+		"/Users/arthur/Documents/github/ca-website/views/chat.ejs",
+		"/Users/arthur/Documents/github/ca-website/views/login.ejs",
+		"/Users/arthur/Documents/github/ca-website/public/login.ejs",
+		"/Users/arthur/Documents/github/ca-website/views/home.ejs",
+		"/Users/arthur/Documents/github/ca-website/views/profile.ejs",
+		"/Users/arthur/Documents/github/clou_game/README.md",
+		"/Users/arthur/Documents/github/ca-website/public/login.html",
+		"/Users/arthur/Documents/code/test.json",
+		"/Users/arthur/Documents/github/ca-website/config/database.js",
+		"/Users/arthur/Documents/github/ca-website/package.json",
+		"/Users/arthur/Documents/github/website/app.js",
+		"/Users/arthur/Documents/github/ca-website/public/js/script.js",
+		"/Users/arthur/Documents/github/ca-website/views/index.ejs",
+		"/Users/arthur/Documents/boulot/TPISN/TP_BIOINFO/TP_BIOINFO.pde",
+		"/Users/arthur/Documents/boulot/TPISN/TP_BIOINFO/function.pde",
+		"/Users/arthur/Documents/boulot/TPISN/TP_BIOINFO.tex",
+		"/Users/arthur/Documents/boulot/TPISN/TP_BIOINFO/functions.pde",
+		"/Users/arthur/Documents/boulot/TPISN/TP_BIOINFO/functions",
+		"/Users/arthur/Documents/boulot/latex/rapport_save.tex",
+		"/Users/arthur/Documents/boulot/latex/rapport_correnson/rapport.tex",
+		"/Users/arthur/Documents/github/website/links.json",
+		"/Users/arthur/Documents/github/website/links.html",
+		"/Users/arthur/Documents/github/node-test/app.js",
+		"/Users/arthur/Documents/github/website/js/main.js",
+		"/Users/arthur/Documents/github/node-test/index.html",
+		"/Users/arthur/Documents/code/test.html",
+		"/Users/arthur/.hyper.js",
+		"/Users/arthur/Documents/code/c/prog.py",
+		"/Users/arthur/Documents/code/c/deg.c",
+		"/Users/arthur/Documents/Processing/sketch_3D/sketch_3D.pde",
+		"/Users/arthur/Documents/boulot/latex/devenir-etudiant_modele-de-rapport/rapport.tex",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/User/ocaml.sublime-build",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/User/pdflatex.sublime-build",
+		"/Users/arthur/Documents/code/hp.html",
+		"/Users/arthur/Documents/code/regexNode.js",
+		"/Users/arthur/Documents/code/ocaml/expression.ml",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/User/TerminalView.hidden-tmTheme",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/TerminalView/TerminalView.hidden-tmTheme",
+		"/Users/arthur/Downloads/devenir-etudiant_modele-de-rapport/rapport.tex",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/User/Terminality.sublime-settings",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/arthur/Library/Application Support/Sublime Text 3/Packages/Terminality/Default.sublime-keymap",
+		"/Users/arthur/Documents/Processing/simPhys/simPhys.pde",
+		"/Users/arthur/Documents/code/canvasGame/App.js",
+		"/Users/arthur/Documents/code/protoCameleon/playground.js",
+		"/Users/arthur/Documents/code/canvasGame/pgCustom.js",
+		"/Users/arthur/Documents/github/u_shell_test_it/test_it",
+		"/Users/arthur/Documents/github/IntegralC/Makefile",
+		"/Users/arthur/Documents/github/IntegralC/.gitignore",
+		"/Users/arthur/Documents/github/IntegralC/config.txt",
+		"/Users/arthur/Documents/github/IntegralC/src/main.c",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/ex2_error.txt",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/ex1_test.txt",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/ex3_test.txt",
+		"/Users/arthur/Documents/justify.sh",
+		"/Users/arthur/Documents/github/u_shell_test_it/test",
+		"/Users/arthur/Documents/github/u_shell_test_it/README.md",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/ex2_test.txt",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/ex_targ.txt",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/ex_test.txt",
+		"/Users/arthur/Documents/github/u_shell_test_it/exemple/print.py",
+		"/Users/arthur/Documents/github/u_shell_test_it/config.txt",
+		"/Users/arthur/Documents/github/u_shell_test_it/tests/config.txt",
+		"/Users/arthur/Documents/github/IntegralC/test",
+		"/Users/arthur/Documents/github/IntegralC/tests/x2_test.txt",
+		"/Users/arthur/Documents/github/IntegralC/tests/x2_test_out.txt",
+		"/Users/arthur/Documents/github/IntegralC/x2_test.txt",
+		"/Users/arthur/Documents/github/IntegralC/tests/test1_test.txt",
+		"/Users/arthur/Documents/github/IntegralC/tests/fail_test_out.txt",
+		"/Users/arthur/Documents/github/IntegralC/tests/fail_test.txt",
+		"/Users/arthur/Documents/github/IntegralC/tests/input_test_out.txt",
+		"/Users/arthur/Documents/github/IntegralC/input_test_error.txt",
+		"/Users/arthur/Documents/github/IntegralC/input_test.txt",
+		"/Users/arthur/Documents/github/IntegralC/src/limit_sum.c",
+		"/Users/arthur/Documents/github/IntegralC/src/eval.c",
+		"/Users/arthur/Documents/github/IntegralC/src/eval.h",
+		"/Users/arthur/Documents/github/IntegralC/src/Makefile",
+		"/Users/arthur/Documents/github/IntegralC/src/limit_sum.h",
+		"/Users/arthur/Documents/github/coralRef/screens/contacts.js",
+		"/Users/arthur/Documents/github/coralRef/screens/profile.js",
+		"/Users/arthur/Documents/github/coralRef/screens/shop.js",
+		"/Users/arthur/Documents/github/coralRef/App.js",
+		"/Users/arthur/Documents/github/coralRef/styles.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 167.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 78.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 373.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lsp.sublime-project",
+	"replace":
+	{
+		"height": 120.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 982.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

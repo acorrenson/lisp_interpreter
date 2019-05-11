@@ -63,7 +63,8 @@ let extract pred pks =
 (* extract a symbol *)
 let extract_symbol pks =
   let is_alpha c = match c with 
-    | 'a'..'z' | 'A'..'Z' | '0'..'9' | '_' -> true
+    | 'a'..'z' | 'A'..'Z' 
+    | '0'..'9' | '_' -> true
     | _ -> false
   in extract is_alpha pks
 
@@ -76,7 +77,6 @@ let extract_string pks =
   in 
   let s = extract is_alpha pks in
   fwd pks; s
-
 
 (* extract a number *)
 let extract_number pks =
@@ -104,7 +104,7 @@ let rec lex pks =
         fwd pks; Lstring (extract_string pks)
       | ';' ->
         find_eol pks; lex pks
-      | '+' | '-' | '*' | '%' ->
+      | '+' | '-' | '*' ->
         fwd pks; Lop (c)
       | _ -> failwith ("Unknown symbol : "^(String.make 1 c))
 
@@ -121,6 +121,6 @@ let rec lex_all pks =
   | _ as l -> pp_lexeme l; lex_all pks
 
 (* TEST *)
-let _ =
+(* let _ =
   let pks = fill_pks "test.lisp" in
-  lex_all pks
+  lex_all pks *)

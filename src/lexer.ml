@@ -25,11 +25,12 @@ let pp_lexeme l =
   | Lop c -> print_endline (String.make 1 c)
 
 (* Custom peakable string *)
-type peakable_string = {string : string; mutable pos : int; len : int}
+type peakable_string = {mutable string : string; mutable pos : int; len : int}
 
 (* Functions to manipulate peakable strings *)
 let init_pks s =  {string = s; pos = 0; len = String.length s}
 let fwd pks = pks.pos <- pks.pos + 1
+let bwd pks = pks.pos <- pks.pos - 1
 
 (* Build a peakable string from a file *)
 let fill_pks f =
@@ -121,6 +122,6 @@ let rec lex_all pks =
   | _ as l -> pp_lexeme l; lex_all pks
 
 (* TEST *)
-(* let _ =
+let _ =
   let pks = fill_pks "test.lisp" in
-  lex_all pks *)
+  lex_all pks

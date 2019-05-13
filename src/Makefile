@@ -1,4 +1,21 @@
 
-parser: lexer.ml parser.ml
-	ocamlc -o parser lexer.ml parser.ml
+calc: parser.cmo lexer.cmo
+	ocamlc -o calc parser.cmo lexer.cmo calc.ml
 
+lexer.ml: lexer.mll
+	ocamllex lexer.mll
+
+lexer.cmo: lexer.ml
+	ocamlc -c lexer.ml
+
+parser:
+	ocamlyacc parser.mly
+
+parser.cmi: parser
+	ocamlc -c parser.mli
+
+parser.cmo: parser.cmi 
+	ocamlc -c parser.ml
+
+clean:
+	rm -rf *.cmi *.cmo *.mli lexer.ml parser.ml calc

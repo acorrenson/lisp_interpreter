@@ -1,6 +1,5 @@
 %{
-  (* caml code *)
-
+  open Ast
 %}
 
 %token <int> INT
@@ -12,7 +11,7 @@
 %nonassoc UMINUS
 
 %start main
-%type <string> main
+%type <Ast.ast> main
 %%
 
 main:
@@ -20,14 +19,14 @@ main:
 ;
 
 expr:
-  | INT                         { string_of_int $1 }
-  | LPAREN sym expr_l RPAREN    { "("^$2^$3^")" }
-  | MINUS INT %prec UMINUS      { "-"^(string_of_int $2) }
+  | INT                         { Num $1 }
+  | LPAREN sym expr_l RPAREN    { Call ($2, $3) }
+  | MINUS INT %prec UMINUS      { Num (- $2) }
 ;
 
 expr_l:
-  | expr expr_l                 { $1^$2 }
-  | expr                        { $1 }
+  | expr expr_l                 { $1::$2 }
+  | expr                        { [$1] }
 ;
 
 sym:

@@ -1,26 +1,39 @@
+%{
+  (* caml code *)
+
+%}
 
 %token <int> INT
+%token <string> SYM
 %token PLUS MINUS TIMES DIV
 %token LPAREN RPAREN
 %token EOL
 
-%left PLUS MINUS
-%left TIMES DIV
 %nonassoc UMINUS
 
 %start main
-%type <int> main
+%type <string> main
 %%
 
 main:
-  expr EOL        { $1 }
+  expr EOL                      { $1 }
 ;
 
 expr:
-  | INT                         { $1 }
-  | LPAREN expr RPAREN          { $2 }
-  | expr PLUS expr              { $1 + $3 }
-  | expr MINUS expr             { $1 - $3 }
-  | expr DIV expr               { $1 / $3 }
-  | expr TIMES expr             { $1 * $3 }
-  | MINUS expr %prec UMINUS     { - $2 }
+  | INT                         { string_of_int $1 }
+  | LPAREN sym expr_l RPAREN    { "("^$2^$3^")" }
+  | MINUS INT %prec UMINUS      { "-"^(string_of_int $2) }
+;
+
+expr_l:
+  | expr expr_l                 { $1^$2 }
+  | expr                        { $1 }
+;
+
+sym:
+  | PLUS                        { "+" }
+  | MINUS                       { "-" }
+  | TIMES                       { "*" }
+  | DIV                         { "/" }
+  | SYM                         { $1 }
+;

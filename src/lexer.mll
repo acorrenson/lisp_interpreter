@@ -13,5 +13,6 @@ rule token = parse
   | ['/']                 { DIV }
   | ['(']                 { LPAREN }
   | [')']                 { RPAREN }
+  | ['a'-'z']+ as s       { SYM s }
   | eof                   { raise Eof }
   | _ as c                { failwith ("Unknow token : "^(String.make 1 c))}

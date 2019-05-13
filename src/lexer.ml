@@ -11,7 +11,6 @@ type lexeme =
   | Lsymbol of string
   | Lstring of string
   | Lnumber of int
-  | Lop of char
 
 (* Print a lexeme *)
 let pp_lexeme l =
@@ -22,7 +21,6 @@ let pp_lexeme l =
   | Lsymbol s -> print_endline s
   | Lstring s -> print_endline s
   | Lnumber n -> print_endline (string_of_int n)
-  | Lop c -> print_endline (String.make 1 c)
 
 (* Custom peakable string *)
 type peakable_string = {mutable string : string; mutable pos : int; len : int}
@@ -105,8 +103,8 @@ let rec lex pks =
         fwd pks; Lstring (extract_string pks)
       | ';' ->
         find_eol pks; lex pks
-      | '+' | '-' | '*' ->
-        fwd pks; Lop (c)
+      | '+' | '-' | '*' | '/' ->
+        fwd pks; Lsymbol (String.make 1 c)
       | _ -> failwith ("Unknown symbol : "^(String.make 1 c))
 
   in
@@ -120,8 +118,3 @@ let rec lex_all pks =
   match lex pks with
   | Lend -> pp_lexeme Lend
   | _ as l -> pp_lexeme l; lex_all pks
-
-(* TEST *)
-let _ =
-  let pks = fill_pks "test.lisp" in
-  lex_all pks

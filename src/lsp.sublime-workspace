@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"len",
-				"length"
+				"ex",
+				"Expected"
+			],
+			[
+				"end",
+				"endline"
+			],
+			[
+				"L",
+				"Lop"
+			],
+			[
+				"exp",
+				"expr"
 			],
 			[
 				"Ls",
-				"Lstring"
+				"Lsymbol"
+			],
+			[
+				"par",
+				"parser"
+			],
+			[
+				"s",
+				"symbol"
+			],
+			[
+				"len",
+				"length"
 			],
 			[
 				"fi",
@@ -42,10 +66,6 @@
 			[
 				"pro",
 				"produit"
-			],
-			[
-				"s",
-				"stdio.h\tstandard header"
 			],
 			[
 				"ca",
@@ -104,10 +124,6 @@
 				"pions"
 			],
 			[
-				"end",
-				"endline"
-			],
-			[
 				"str",
 				"string"
 			],
@@ -128,10 +144,6 @@
 				"expression"
 			],
 			[
-				"exp",
-				"expression"
-			],
-			[
 				"tk",
 				"token"
 			],
@@ -142,10 +154,6 @@
 			[
 				"mu",
 				"multiple"
-			],
-			[
-				"ex",
-				"exps"
 			],
 			[
 				"sr",
@@ -506,14 +514,6 @@
 			[
 				"as",
 				"astype"
-			],
-			[
-				"im",
-				"img"
-			],
-			[
-				"lab",
-				"labels"
 			]
 		]
 	},
@@ -1068,7 +1068,10 @@
 	"file_history":
 	[
 		"/Users/arthur/Documents/github/lisp_interpreter/src/test.lisp",
+		"/Users/arthur/Documents/github/lisp_interpreter/src/parser.ml",
 		"/Users/arthur/Documents/github/lisp_interpreter/src/lexer.ml",
+		"/Users/arthur/Downloads/lis.py",
+		"/Users/arthur/Documents/github/lisp_interpreter/src/Makefile",
 		"/Users/arthur/Documents/github/superChip8-compiler/src/lexer.ml",
 		"/Users/arthur/Documents/github/clou_game/main.py",
 		"/Users/arthur/Documents/github/clou_game/ateliers/atelier2.py",
@@ -1191,14 +1194,11 @@
 		"/Users/arthur/Documents/github/IntegralC/src/Makefile",
 		"/Users/arthur/Documents/github/IntegralC/src/limit_sum.h",
 		"/Users/arthur/Documents/github/coralRef/screens/contacts.js",
-		"/Users/arthur/Documents/github/coralRef/screens/profile.js",
-		"/Users/arthur/Documents/github/coralRef/screens/shop.js",
-		"/Users/arthur/Documents/github/coralRef/App.js",
-		"/Users/arthur/Documents/github/coralRef/styles.js"
+		"/Users/arthur/Documents/github/coralRef/screens/profile.js"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 73.0
 	},
 	"find_in_files":
 	{
@@ -1236,7 +1236,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 35.0
 	},
 	"input":
 	{
@@ -1267,7 +1267,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 373.0
+		"height": 596.0
 	},
 	"output.find_results":
 	{
@@ -1277,7 +1277,7 @@
 	"project": "lsp.sublime-project",
 	"replace":
 	{
-		"height": 120.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":

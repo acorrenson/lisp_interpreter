@@ -1,6 +1,6 @@
 
-calc: ast.cmo parser.cmo lexer.cmo
-	ocamlc -o calc ast.cmo parser.cmo lexer.cmo calc.ml
+repl: ast.cmo parser.cmo lexer.cmo
+	ocamlc -o repl ast.cmo parser.cmo lexer.cmo repl.ml
 
 lexer.ml: lexer.mll
 	ocamllex lexer.mll
@@ -22,4 +22,4 @@ ast.cmo: ast.ml
 
 
 clean:
-	rm -rf *.cmi *.cmo *.mli lexer.ml parser.ml calc
+	rm -rf *.cmi *.cmo *.mli lexer.ml parser.ml repl

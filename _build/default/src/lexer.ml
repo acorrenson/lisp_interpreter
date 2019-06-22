@@ -163,7 +163,7 @@ let
 
   | 3 ->
 # 12 "src/lexer.mll"
-                                  ( EOL )
+                                  ( token lexbuf )
 # 168 "src/lexer.ml"
 
   | 4 ->

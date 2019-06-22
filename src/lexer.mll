@@ -9,7 +9,7 @@ rule token = parse
   | symbol as s                   { SYM s }
   | ['0'-'9']+ as n               { NUM (int_of_string n) }
   | [' ' '\t']                    { token lexbuf }
-  | ['\n']                        { EOL }
+  | ['\n']                        { token lexbuf }
   | ['(']                         { LPAREN }
   | [')']                         { RPAREN }
   | eof                           { raise Eof }

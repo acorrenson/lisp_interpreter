@@ -1,0 +1,6 @@
+(include_subdirs unqualified)
+(dirs src)
+
+(executable
+  (name main)
+  (modules ast parser lexer main))

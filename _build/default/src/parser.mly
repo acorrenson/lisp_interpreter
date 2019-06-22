@@ -13,7 +13,7 @@
 %%
 
 main:
-  sexpr EOL         { $1 }
+  | sexpr           { $1 }
 ;
 
 sexpr:

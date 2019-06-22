@@ -8,19 +8,21 @@ type sexpr =
   | Pair of sexpr * sexpr
   | Nil
 
-let ppast a =
+(* ============================ *)
+(* Printing                     *)
+(* ============================ *)
+
+let rec ppast a =
   match a with
   | Num n -> print_endline ("- int : " ^ (string_of_int n))
   | Sym s -> print_endline ("- sym : " ^ s)
-  | _ -> print_endline ("- list")
-
-
-let rec list_of_sexpr s =
-  match s with
-  | Nil -> []
-  | Pair (a, b) -> ppast a; a::(list_of_sexpr b)
-  | _ -> failwith "this sexpr isn't a list"
-
+  | _ -> print_endline ("- list : ( " ^ (string_of_list a) ^ ")")
+and string_of_list a =
+  match a with
+  | Pair (Sym s, t) -> s ^ " " ^ (string_of_list t)
+  | Pair (Num s, t) -> (string_of_int s) ^ " " ^ (string_of_list t)
+  | Nil -> ""
+  | _ -> "..."
 
 let rec psexpr s =
   match s with
@@ -34,13 +36,28 @@ let rec psexpr s =
   | Num n -> print_int n
   | Nil -> print_string "Nil"
 
+
+(* ============================ *)
+(* utils                        *)
+(* ============================ *)
+
+let rec list_of_sexpr s =
+  match s with
+  | Nil -> []
+  | Pair (a, b) -> a::(list_of_sexpr b)
+  | _ -> failwith "this sexpr isn't a list"
+
+
+(* ============================ *)
+(* Eval - Apply                 *)
+(* ============================ *)
+
 let rec eval sxp =
   match sxp with
   | Num _ -> sxp
   | Sym _ -> sxp
   | Nil -> Nil
   | Pair (Sym s, body) ->
-    psexpr (eval_list body); print_newline();
     begin
       match s with
       | "/"   -> divide (eval_list body) (* env *)
@@ -50,9 +67,10 @@ let rec eval sxp =
       | "-1+" -> decr   (eval_list body) (* env *)
       | "1+"  -> incr   (eval_list body) (* env *)
       | "cond"  -> cond   (eval_list body) (* env *)
+      | "list"  -> plist  (eval_list body) (* env *)
       | _ -> failwith "Unknown operation"
     end
-  | Pair (a, b) -> Pair (a, b)
+  | _ -> failwith "syntax error"
 
 and eval_list l =
   match l with
@@ -62,6 +80,10 @@ and eval_list l =
   | Pair (s, Nil) -> Pair (eval s, Nil)
   | Pair (s1, s2) -> Pair (eval s1, eval_list s2)
   | Nil -> Nil
+
+(* ============================ *)
+(* Primitives                   *)
+(* ============================ *)
 
 and divide l =
   match l with
@@ -116,7 +138,6 @@ and cond l =
     end
   | _ -> failwith "Incorrect body for cond"
 
-(* ============================ *)
-(* Printing                     *)
-(* ============================ *)
+and plist l = l
 
+(* and define l e = *)

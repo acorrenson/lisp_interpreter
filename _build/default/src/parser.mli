@@ -7,4 +7,4 @@ type token =
   | EOL
 
 val main :
-  (Lexing.lexbuf  -> token) -> Lexing.lexbuf -> Ast.ast
+  (Lexing.lexbuf  -> token) -> Lexing.lexbuf -> Ast.sexpr

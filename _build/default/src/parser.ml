@@ -24,37 +24,37 @@ let yytransl_block = [|
     0|]
 
 let yylhs = "\255\255\
-\001\000\002\000\002\000\002\000\003\000\004\000\004\000\000\000"
+\001\000\002\000\002\000\002\000\002\000\003\000\003\000\000\000"
 
 let yylen = "\002\000\
-\002\000\001\000\001\000\001\000\004\000\001\000\002\000\002\000"
+\002\000\001\000\001\000\003\000\002\000\001\000\002\000\002\000"
 
 let yydefred = "\000\000\
-\000\000\000\000\000\000\003\000\002\000\008\000\000\000\004\000\
-\000\000\001\000\000\000\000\000\007\000\005\000"
+\000\000\000\000\000\000\003\000\002\000\008\000\000\000\005\000\
+\000\000\000\000\001\000\007\000\004\000"
 
 let yydgoto = "\002\000\
-\006\000\011\000\008\000\012\000"
+\006\000\009\000\010\000"
 
-let yysindex = "\002\000\
-\255\254\000\000\253\254\000\000\000\000\000\000\000\255\000\000\
-\255\254\000\000\255\254\003\255\000\000\000\000"
+let yysindex = "\005\000\
+\002\255\000\000\255\254\000\000\000\000\000\000\003\255\000\000\
+\002\255\006\255\000\000\000\000\000\000"
 
 let yyrindex = "\000\000\
 \000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-\000\000\000\000\005\255\000\000\000\000\000\000"
+\008\255\000\000\000\000\000\000\000\000"
 
 let yygindex = "\000\000\
-\000\000\007\000\000\000\254\255"
+\000\000\010\000\003\000"
 
-let yytablesize = 9
+let yytablesize = 12
 let yytable = "\003\000\
-\009\000\004\000\001\000\005\000\014\000\010\000\006\000\007\000\
-\013\000"
+\008\000\004\000\003\000\005\000\004\000\001\000\005\000\013\000\
+\011\000\006\000\007\000\012\000"
 
 let yycheck = "\001\001\
-\004\001\003\001\001\000\005\001\002\001\006\001\002\001\001\000\
-\011\000"
+\002\001\003\001\001\001\005\001\003\001\001\000\005\001\002\001\
+\006\001\002\001\001\000\009\000"
 
 let yynames_const = "\
   LPAREN\000\
@@ -71,55 +71,53 @@ let yynames_block = "\
 let yyact = [|
   (fun _ -> failwith "parser")
 ; (fun __caml_parser_env ->
-    let _1 = (Parsing.peek_val __caml_parser_env 1 : 'expr) in
+    let _1 = (Parsing.peek_val __caml_parser_env 1 : 'sexpr) in
     Obj.repr(
 # 16 "src/parser.mly"
-                  ( _1 )
+                    ( _1 )
 # 79 "src/parser.ml"
-               : Ast.ast))
+               : Ast.sexpr))
 ; (fun __caml_parser_env ->
     let _1 = (Parsing.peek_val __caml_parser_env 0 : int) in
     Obj.repr(
 # 20 "src/parser.mly"
                     ( Num _1 )
 # 86 "src/parser.ml"
-               : 'expr))
+               : 'sexpr))
 ; (fun __caml_parser_env ->
     let _1 = (Parsing.peek_val __caml_parser_env 0 : string) in
     Obj.repr(
 # 21 "src/parser.mly"
                     ( Sym _1 )
 # 93 "src/parser.ml"
-               : 'expr))
+               : 'sexpr))
 ; (fun __caml_parser_env ->
-    let _1 = (Parsing.peek_val __caml_parser_env 0 : 'application) in
+    let _2 = (Parsing.peek_val __caml_parser_env 1 : 'args) in
     Obj.repr(
-# 22 "src/parser.mly"
-                    ( _1 )
+# 23 "src/parser.mly"
+                    ( _2 )
 # 100 "src/parser.ml"
-               : 'expr))
+               : 'sexpr))
 ; (fun __caml_parser_env ->
-    let _2 = (Parsing.peek_val __caml_parser_env 2 : string) in
-    let _3 = (Parsing.peek_val __caml_parser_env 1 : 'args) in
     Obj.repr(
-# 25 "src/parser.mly"
-                          ( apply _2 _3 )
-# 108 "src/parser.ml"
-               : 'application))
+# 24 "src/parser.mly"
+                    ( Nil )
+# 106 "src/parser.ml"
+               : 'sexpr))
 ; (fun __caml_parser_env ->
-    let _1 = (Parsing.peek_val __caml_parser_env 0 : 'expr) in
+    let _1 = (Parsing.peek_val __caml_parser_env 0 : 'sexpr) in
     Obj.repr(
-# 28 "src/parser.mly"
-                    ( [_1]   )
-# 115 "src/parser.ml"
+# 27 "src/parser.mly"
+                    ( Pair (_1, Nil) )
+# 113 "src/parser.ml"
                : 'args))
 ; (fun __caml_parser_env ->
-    let _1 = (Parsing.peek_val __caml_parser_env 1 : 'expr) in
+    let _1 = (Parsing.peek_val __caml_parser_env 1 : 'sexpr) in
     let _2 = (Parsing.peek_val __caml_parser_env 0 : 'args) in
     Obj.repr(
-# 29 "src/parser.mly"
-                    ( _1::_2 )
-# 123 "src/parser.ml"
+# 28 "src/parser.mly"
+                    ( Pair (_1, _2) )
+# 121 "src/parser.ml"
                : 'args))
 (* Entry main *)
 ; (fun __caml_parser_env -> raise (Parsing.YYexit (Parsing.peek_val __caml_parser_env 0)))
@@ -142,4 +140,4 @@ let yytables =
     Parsing.names_const=yynames_const;
     Parsing.names_block=yynames_block }
 let main (lexfun : Lexing.lexbuf -> token) (lexbuf : Lexing.lexbuf) =
-   (Parsing.yyparse yytables 1 lexfun lexbuf : Ast.ast)
+   (Parsing.yyparse yytables 1 lexfun lexbuf : Ast.sexpr)

@@ -9,21 +9,20 @@
 %token <int> NUM
 %token EOL
 %start main
-%type <Ast.ast> main
+%type <Ast.sexpr> main
 %%
 
 main:
-  expr EOL        { $1 }
+  sexpr EOL         { $1 }
 ;
 
-expr:
+sexpr:
   | NUM             { Num $1 }
   | SYM             { Sym $1 }
-  | application     { $1 }
-
-application:
-  LPAREN PRIM args RPAREN { apply $2 $3 }
+  | LPAREN args RPAREN
+                    { $2 }
+  | LPAREN RPAREN   { Nil }
 
 args:
-  | expr            { [$1]   }
-  | expr args       { $1::$2 }
+  | sexpr           { Pair ($1, Nil) }
+  | sexpr args      { Pair ($1, $2) }

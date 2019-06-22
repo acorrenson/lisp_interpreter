@@ -8,10 +8,23 @@ type sexpr =
   | Pair of sexpr * sexpr
   | Nil
 
+let rec psexpr s =
+  match s with
+  | Pair (s1, s2) ->
+    print_string "("; 
+    psexpr s1;
+    print_string " . ";
+    psexpr s2;
+    print_string ")"
+  | Sym s -> print_string s
+  | Num n -> print_int n
+  | Nil -> print_string "Nil"
+
 let rec eval sxp =
   match sxp with
   | Num _ -> sxp
   | Sym _ -> sxp
+  | Nil -> Nil
   | Pair (Sym s, body) ->
     begin
       match s with
@@ -24,15 +37,16 @@ let rec eval sxp =
       | "cond"  -> cond   (eval_list body) (* env *)
       | _ -> failwith "Unknown operation"
     end
-  | _ -> failwith "Syntax error"
+  | Pair (a, b) -> Pair (a, b)
 
 and eval_list l =
   match l with
   | Num n -> Num n
   | Sym s -> Sym s
+  | Pair (Sym _, _) -> eval l
   | Pair (s, Nil) -> Pair (eval_list s, Nil)
   | Pair (s1, s2) -> Pair (eval_list s1, eval_list s2)
-  | _ -> failwith "Not a list"
+  | Nil -> Nil
 
 and divide l =
   match l with
@@ -42,7 +56,8 @@ and divide l =
 and add l =
   match l with
   | Pair (Num a, Pair (Num b, Nil)) -> Num (a + b)
-  | Pair (a, b) -> add (Pair (eval a, eval b))
+  | Pair (Num a, Pair (Num b, s)) -> add (Pair ( Num a, add (Pair (Num b, s))))
+  | Pair (Num a, Num b) -> Num (a + b)
   | _ -> failwith "operand error"
 
 and mult l =
@@ -76,7 +91,7 @@ and cond l =
       match (eval pred) with
       | Num 0 -> eval sxp2
       | Num 1 -> eval sxp1
-      | _     -> failwith "NOn boolean value"
+      | _     -> failwith "Non boolean value"
     end
   | _ -> failwith "Incorrect body for cond"
 
@@ -89,15 +104,3 @@ let ppast a =
   | Num n -> print_endline ("- int : " ^ (string_of_int n))
   | Sym s -> print_endline ("- sym : " ^ s)
   | _ -> print_endline ("- list")
-
-let rec psexpr s =
-  match s with
-  | Pair (s1, s2) ->
-    print_string "("; 
-    psexpr s1;
-    print_string " . ";
-    psexpr s2;
-    print_string ")"
-  | Sym s -> print_string s
-  | Num n -> print_int n
-  | Nil -> print_string "Nil"

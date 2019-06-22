@@ -27,7 +27,7 @@ and string_of_list a =
 let rec psexpr s =
   match s with
   | Pair (s1, s2) ->
-    print_string "("; 
+    print_string "(";
     psexpr s1;
     print_string " . ";
     psexpr s2;
@@ -47,38 +47,61 @@ let rec list_of_sexpr s =
   | Pair (a, b) -> a::(list_of_sexpr b)
   | _ -> failwith "this sexpr isn't a list"
 
+let is_primitive s =
+  match s with
+  | "define"
+  | "-"
+  | "*"
+  | "+"
+  | "/"
+  | "list" -> true
+  | _ -> false
 
 (* ============================ *)
 (* Eval - Apply                 *)
 (* ============================ *)
 
-let rec eval sxp =
+(* lookup for a value associated to a symbol in the current env *)
+let lookup s env =
+  try
+    List.assoc s !env
+  with Not_found -> failwith (s ^ " not defined")
+
+(* bind a symbol to a value *)
+let bind s v env = env := (s,v)::(!env)
+
+
+let rec eval sxp env =
   match sxp with
   | Num _ -> sxp
-  | Sym _ -> sxp
+  | Sym s -> lookup s env
   | Nil -> Nil
   | Pair (Sym s, body) ->
     begin
       match s with
-      | "/"   -> divide (eval_list body) (* env *)
-      | "-"   -> sub    (eval_list body) (* env *)
-      | "+"   -> add    (eval_list body) (* env *)
-      | "*"   -> mult   (eval_list body) (* env *)
-      | "-1+" -> decr   (eval_list body) (* env *)
-      | "1+"  -> incr   (eval_list body) (* env *)
-      | "cond"  -> cond   (eval_list body) (* env *)
-      | "list"  -> plist  (eval_list body) (* env *)
-      | _ -> failwith "Unknown operation"
+      | "/"   -> divide (eval_list body env) (* env *)
+      | "-"   -> sub    (eval_list body env) (* env *)
+      | "+"   -> add    (eval_list body env) (* env *)
+      | "*"   -> mult   (eval_list body env) (* env *)
+      | "-1+" -> decr   (eval_list body env) (* env *)
+      | "1+"  -> incr   (eval_list body env) (* env *)
+      | "cond"  -> cond (eval_list body env) env
+      | "list"  -> plist  (eval_list body env) (* env *)
+      | "define" -> define body env
+      | _ ->
+        (try
+          eval (lookup s env) env
+        with e -> raise e)
     end
   | _ -> failwith "syntax error"
 
-and eval_list l =
+and eval_list l env =
   match l with
   | Num n -> Num n
-  | Sym s -> Sym s
-  | Pair (Sym _, _) -> eval l
-  | Pair (s, Nil) -> Pair (eval s, Nil)
-  | Pair (s1, s2) -> Pair (eval s1, eval_list s2)
+  | Sym s -> lookup s env
+  | Pair (Sym s, _) when (is_primitive s) -> eval l env
+  | Pair (s, Nil) -> Pair (eval s env, Nil)
+  | Pair (s1, s2) -> Pair (eval s1 env, eval_list s2 env)
   | Nil -> Nil
 
 (* ============================ *)
@@ -127,17 +150,21 @@ and decr l =
   | Pair (Num a, Nil) -> Num (a - 1)
   | _ -> failwith "operand error"
 
-and cond l =
+and cond l env =
   match l with
   | Pair (pred, Pair (sxp1, Pair (sxp2, Nil))) ->
     begin
-      match (eval pred) with
-      | Num 0 -> eval sxp2
-      | Num 1 -> eval sxp1
+      match (eval pred env) with
+      | Num 0 -> eval sxp2 env
+      | Num 1 -> eval sxp1 env
       | _     -> failwith "Non boolean value"
     end
   | _ -> failwith "Incorrect body for cond"
 
 and plist l = l
-
-(* and define l e = *)
+and define l e =
+  try
+    match l with
+     | Pair (Sym s, Pair (v, Nil)) -> e := (s, v)::(!e); Nil
+     | _ -> failwith "define error"
+  with _ -> Nil
